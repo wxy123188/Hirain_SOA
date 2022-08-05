@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_rl"
+    android:layout_width="480dp"
+    android:layout_height="292dp"
+    android:layout_marginLeft="839dp"
+    android:layout_marginTop="60dp"
+    android:background="@mipmap/home_card_bg">
+
+    <TextView
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="62dp"
+        android:id="@+id/temperature_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/color_8fd8f6"
+        android:text="27℃"
+        android:textStyle="bold"
+
+        />
+    <TextView
+
+        android:id="@+id/address_tv"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/temperature_tv"
+        android:layout_below="@id/temperature_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="北京 · 朝阳区"
+        android:textColor="@color/color_a5a5a5"
+        />
+   <LinearLayout
+       android:layout_marginTop="62dp"
+       android:layout_toRightOf="@id/temperature_tv"
+       android:layout_marginLeft="65dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center"
+       >
+       <TextView
+           android:id="@+id/time_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:textSize="38sp"
+           android:textColor="@color/color_c9cbd1"
+           android:text="15:08"
+           />
+       <TextView
+           android:layout_marginTop="15dp"
+           android:id="@+id/date_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="24sp"
+           android:textColor="@color/color_a5a5a5"
+           android:text="2022.06.01"
+           />
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/humidity_lin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginLeft="163dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/humidity_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="38%"
+            android:textColor="@color/color_8fd8f6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="湿度"
+            android:textColor="@color/color_a5a5a5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/humidity_lin"
+        android:gravity="center"
+        android:id="@+id/ultraviolet_rays_lin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ultraviolet_rays_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="20"
+            android:textColor="@color/color_8fd8f6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="紫外线"
+            android:textColor="@color/color_a5a5a5"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_toRightOf="@id/ultraviolet_rays_lin"
+        android:id="@+id/wind_lin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/wind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="3"
+            android:textColor="@color/color_8fd8f6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="西北风"
+            android:textColor="@color/color_a5a5a5"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

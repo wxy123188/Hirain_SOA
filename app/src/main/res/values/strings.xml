@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Hirain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_model">是否启动当前模式</string>
+    <string name="dialog_cancle">取消</string>
+    <string name="dialg_start">开启</string>
+    <string name="set_model">设置新模式名称</string>
+    <string name="dialg_confirm">确认</string>
+    <string name="save_mode">确认存为新模式吗</string>
+    <string name="edit_mode_tip">当前设置尚未保存\n是否保存后退出</string>
+    <string name="drive_mode" >驾驶模式</string>
+    <string name="drive_mode_start">启动</string>
+    <string name="drive_mode_stop">停止</string>
+    <string name="repeat_name">自定义名字已存在</string>
+    <string name="mode_start">%s已开启</string>
+    <string name="rm_close_tip">后视镜未打开-不可操作</string>
+    <string name="drive_line1">通勤</string>
+    <string name="drive_line4">去加油站</string>
+    <string name="drive_line3">去商场</string>
+    <string name="drive_line2">去医院</string>
+    <string name="close">关闭</string>
+    <string name="atmospherelamp_1">动感</string>
+    <string name="atmospherelamp_2">舒缓</string>
+    <string name="atmospherelamp_3">节奏</string>
+    <string name="atmospherelamp_4">缤纷</string>
+
+</resources>

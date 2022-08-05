@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CarsetFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="66dp"
+        android:text="车辆设置"
+        android:textColor="@color/color_8fd8f6"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/carse_mode_name"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:text="自定义模式1"
+        />
+
+    <!-- 另存新模式   保存  -->
+
+    <TextView
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:id="@+id/update_mode"
+
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/shape_update_mode_10"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/save_new_mode_lin"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:id="@+id/save_new_mode"
+
+        android:layout_width="184dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@drawable/shape_save_mode_10"
+        android:text="另存新模式"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/view"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+<!--音量-->
+    <RelativeLayout
+        android:id="@+id/carsetfragment_carset_layout_yinliang"
+        android:layout_width="1320dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/save_new_mode_lin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/carset_layout_bur"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/yinlianglog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="194dp"
+            android:src="@mipmap/yinlianglog0" />
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="39dp"
+            android:text="音量"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+        <RadioGroup
+            android:id="@+id/volume"
+            android:layout_width="820dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="283dp"
+            android:layout_marginTop="194dp"
+            android:background="@mipmap/yinliangbrun"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/volume0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_hubian"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_40"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_50"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_60"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_70"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_80"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_90"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/volume_100"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/tm"
+                android:button="@null" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/yin"
+            android:layout_width="94dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="650dp"
+            android:layout_marginTop="290dp"
+            android:background="@mipmap/yin00" />
+
+    </RelativeLayout>
+<!--后视镜-->
+    <RelativeLayout
+        android:id="@+id/carsetfragment_seat_layout_rearview"
+        android:layout_width="1320dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/save_new_mode_lin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/carset_layout_bur"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/rm_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:text="后视镜"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:layout_below="@id/rm_type_tv"
+            android:id="@+id/rm_type"
+            android:layout_width="543dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/caeset_h_z_d_brun"
+            android:padding="4dp"
+            tl:tl_textsize="24sp"
+            android:layout_gravity="center_horizontal"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_indicator_color="@color/dialog_start_bg"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_tab_space_equal="true"/>
+
+
+        <TextView
+            android:id="@+id/rm_direction_tv"
+            android:layout_below="@id/rm_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="82dp"
+            android:gravity="center"
+            android:text="后视镜选择"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:layout_below="@id/rm_direction_tv"
+            android:id="@+id/rm_direction"
+            android:layout_width="543dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/caeset_h_z_d_brun"
+            android:padding="4dp"
+            tl:tl_textsize="24sp"
+            android:layout_gravity="center_horizontal"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_indicator_color="@color/dialog_start_bg"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_tab_space_equal="true"/>
+
+        <RadioGroup
+            android:visibility="gone"
+            android:id="@+id/zuoyouhsj"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="756dp"
+            android:layout_marginTop="337dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/zuohoushijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/youhoushijing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:gravity="center"
+
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/rm_adjust_tv"
+            android:layout_toRightOf="@id/rm_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="镜面角度调节"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+
+        <Button
+            android:layout_toRightOf="@id/rm_adjust_tv"
+            android:id="@+id/jingshang"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="78dp"
+            android:background="@drawable/rearview_mirror_selectortop"
+            />
+
+        <Button
+            android:layout_below="@id/jingshang"
+            android:layout_toLeftOf="@id/jingyou"
+            android:id="@+id/jingzuo"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rearview_mirror_selectorleft"
+            />
+
+        <Button
+
+            android:layout_toRightOf="@id/rm_adjust_tv"
+            android:layout_below="@id/jingshang"
+            android:id="@+id/jingxia"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="121dp"
+            android:background="@drawable/rearview_mirror_selectorbottom"
+            />
+
+        <Button
+            android:layout_toRightOf="@id/jingshang"
+            android:layout_below="@id/jingshang"
+            android:id="@+id/jingyou"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rearview_mirror_selectorright"
+            />
+
+        <ImageView
+
+            android:id="@+id/rm_close_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rm_set_bg"
+
+            />
+
+
+    </RelativeLayout>
+<!--座椅-->
+    <RelativeLayout
+        android:id="@+id/carsetfragment_lamplight_layout_seat"
+        android:layout_width="1320dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/save_new_mode_lin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/carset_layout_bur"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="座椅"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:layout_marginTop="39dp"
+            android:layout_marginLeft="80dp"
+            />
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/chair_type"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/caeset_h_z_d_brun"
+            android:padding="4dp"
+            tl:tl_textsize="24sp"
+            android:layout_centerInParent="true"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_indicator_color="@color/dialog_start_bg"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_tab_space_equal="true"/>
+
+    </RelativeLayout>
+<!--灯光-->
+
+    <RelativeLayout
+        android:id="@+id/carsetfragment_lamplight_layout_lemp"
+        android:layout_width="1320dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/save_new_mode_lin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="67dp"
+
+        android:background="@drawable/carset_layout_bur"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/light_tv"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:text="外部灯光"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/light_type"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/light_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/caeset_h_z_d_brun"
+            android:padding="4dp"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_indicator_color="@color/dialog_start_bg"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_textsize="24sp" />
+
+
+        <TextView
+            android:id="@+id/atmosphere_lamp_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/light_type"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:text="内部氛围灯"
+            android:textColor="#FFF"
+            android:textSize="32sp" />
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/atmosphere_lamp"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/atmosphere_lamp_tv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/caeset_h_z_d_brun"
+            android:padding="4dp"
+            tl:tl_bar_stroke_width="0dp"
+            tl:tl_indicator_anim_enable="true"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_indicator_color="@color/dialog_start_bg"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/white"
+            tl:tl_textsize="24sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_volume"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:background="@mipmap/yinliang"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="260dp" />
+
+    <Button
+        android:id="@+id/button_rearview"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:background="@mipmap/nohshijing"
+        android:layout_marginTop="248dp"
+        android:layout_marginLeft="260dp" />
+
+    <Button
+        android:id="@+id/button_seat"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:background="@mipmap/zuoyiquanbi"
+        android:layout_marginTop="336dp"
+        android:layout_marginLeft="260dp" />
+
+    <Button
+        android:id="@+id/button_lamplight"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:background="@mipmap/nodengguang"
+        android:layout_marginTop="424dp"
+        android:layout_marginLeft="260dp" />
+
+
+
+
+
+</RelativeLayout>

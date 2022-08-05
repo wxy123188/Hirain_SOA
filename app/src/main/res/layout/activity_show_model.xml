@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    >
+
+
+    <ImageView
+        android:id="@+id/light3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/car_light3"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/light3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/car_light3"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/light5_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="590dp"
+        android:layout_marginTop="70dp"
+        android:src="@mipmap/car_light5"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/light5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="660dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/car_light5"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/light1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:src="@mipmap/car_light_1" />
+
+    <ImageView
+        android:id="@+id/light1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/car_light_1" />
+
+    <ImageView
+        android:id="@+id/light6_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="710dp"
+        android:src="@mipmap/car_light6"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/light6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="660dp"
+        android:src="@mipmap/car_light6"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/light4_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="340dp"
+        android:src="@mipmap/car_light4"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/light4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="410dp"
+        android:src="@mipmap/car_light4"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/light2_2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="150dp"
+        android:src="@mipmap/car_light_2" />
+
+    <ImageView
+        android:id="@+id/light2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="80dp"
+        android:src="@mipmap/car_light_2" />
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/exhibition_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/exhibition_bg2" />
+
+    <ImageView
+
+        android:id="@+id/car"
+        android:layout_width="460dp"
+        android:layout_height="164dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="890dp"
+        android:layout_marginBottom="110dp"
+        android:src="@mipmap/car" />
+
+
+</RelativeLayout>

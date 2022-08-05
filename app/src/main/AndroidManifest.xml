@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hirain.hirain">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+<!--    //网络权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+<!--    //震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+<!--    //外部存储器权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/log"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".MyApp"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity"
+
+            android:theme="@style/AppTheme.Logstract">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".left.LeftActivity">
+
+
+
+        </activity>
+        <service android:name=".service.MusicService"/>
+        <service android:name=".service.DealUdpService"/>
+    </application>
+
+</manifest>

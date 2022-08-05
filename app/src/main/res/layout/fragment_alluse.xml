@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="260dp"
+    android:paddingTop="60dp"
+    android:paddingRight="60dp">
+
+    <TextView
+        android:id="@+id/drive_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="@string/drive_mode"
+        android:textColor="@color/color_8fd8f6"
+        android:textSize="32sp" />
+
+    <!--启动和停止-->
+    <TextView
+        android:id="@+id/drive_mode_start"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_update_mode_10"
+        android:gravity="center"
+        android:text="@string/drive_mode_start"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/drive_mode_stop"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/drive_mode_start"
+        android:background="@drawable/shape_save_mode_10"
+        android:gravity="center"
+        android:text="@string/drive_mode_stop"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+
+    <!--左边路线选择-->
+    <RelativeLayout
+        android:id="@+id/drive_line1_rl"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/drive_mode"
+        android:layout_marginTop="50dp">
+        
+        <ImageView
+            android:id="@+id/drive_line1_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/drive_line4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            />
+        <TextView
+            android:id="@+id/drive_line1_tv"
+            android:layout_marginLeft="115dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/color_cfcfcf"
+            android:text="@string/drive_line1"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drive_line2_rl"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/drive_line1_rl"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/drive_line2_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dirve_line1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            />
+        <TextView
+            android:id="@+id/drive_line2_tv"
+            android:layout_marginLeft="115dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/color_cfcfcf"
+            android:text="@string/drive_line2"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drive_line3_rl"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/drive_line2_rl"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/drive_line3_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/drive_line2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            />
+        <TextView
+            android:id="@+id/drive_line3_tv"
+            android:layout_marginLeft="115dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/color_cfcfcf"
+            android:text="@string/drive_line3"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drive_line4_rl"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/drive_line3_rl"
+        android:layout_marginTop="10dp"
+       >
+        <ImageView
+            android:id="@+id/drive_line4_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/drive_line3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="47dp"
+            />
+        <TextView
+            android:id="@+id/drive_line4_tv"
+            android:layout_marginLeft="115dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/color_cfcfcf"
+            android:text="@string/drive_line4"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+    <!--视频播放-->
+    <RelativeLayout
+        android:id="@+id/video_rl"
+        android:layout_width="640dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/drive_mode"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/drive_line1_rl"
+        android:background="@drawable/shape_drive_mode_16">
+
+        <VideoView
+            android:id="@+id/video_left"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="640dp"
+        android:layout_height="500dp"
+        android:layout_below="@id/drive_mode"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/video_rl"
+        android:background="@drawable/shape_drive_mode_16">
+
+        <VideoView
+
+            android:id="@+id/video_right"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

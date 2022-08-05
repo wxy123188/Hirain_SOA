@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1920dp"
+    android:layout_height="720dp"
+
+    >
+
+    <RelativeLayout
+        android:background="@drawable/shape_dialog_circle_30"
+        android:layout_width="680dp"
+        android:layout_height="360dp">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:textColor="#fff"
+        android:text="@string/start_model"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="84dp"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="146dp"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginRight="131dp"
+        android:background="@drawable/shape_dialog_circle_23"
+        android:paddingLeft="36dp"
+        android:paddingRight="14dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+
+        <EditText
+            android:id="@+id/dialog_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="自定义模式"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_25"
+            android:textSize="26sp"
+            />
+        <ImageView
+            android:id="@+id/dialog_et_del"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/dialog_del"
+            />
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_cancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_dialog_circle_left_30"
+                android:gravity="center"
+                android:text="@string/dialog_cancle"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/dialog_start"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_dialog_circle_right_30"
+                android:gravity="center"
+                android:text="@string/dialg_start"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

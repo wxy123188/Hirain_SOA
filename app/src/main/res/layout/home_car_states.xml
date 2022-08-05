@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dp"
+    android:layout_height="292dp"
+    android:layout_marginLeft="839dp"
+    android:layout_marginTop="368dp"
+    android:background="@mipmap/home_card_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车辆状态"
+        android:textColor="@color/white_80"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="70dp"
+        />
+    <RelativeLayout
+        android:id="@+id/air_conditioner_rl"
+        android:layout_marginTop="105dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/air_conditioner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:src="@mipmap/air_conditioner"
+            />
+        <TextView
+            android:id="@+id/air_conditioner_tv"
+            android:layout_alignLeft="@id/air_conditioner"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空调: "
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textColor="@color/color_8fd8f6"
+            />
+        <TextView
+            android:layout_toRightOf="@id/air_conditioner_tv"
+            android:id="@+id/air_conditioner_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="22℃"
+            android:textColor="@color/color_c9cbd1"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:layout_toRightOf="@id/air_conditioner_temperature"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/airflow"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/air_conditioner_rl"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/light_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dp"
+            android:src="@mipmap/home_light"
+            />
+        <TextView
+            android:id="@+id/light_tv"
+            android:layout_alignLeft="@id/light_img"
+            android:layout_marginLeft="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="氛围灯: "
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textColor="@color/color_8fd8f6"
+            />
+        <TextView
+            android:layout_toRightOf="@id/light_tv"
+            android:id="@+id/light_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="未开启"
+            android:textColor="@color/color_c9cbd1"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

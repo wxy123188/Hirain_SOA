@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Logstract">
+        <item name="android:windowBackground">@mipmap/logstart</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/tm</item>
+        <!-- 表示当前对话框弹出后，他后面视图(一般指Activity的视图)的透明度 0 ：完全透明 1:完全不透明，黑色 -->
+        <item name="android:backgroundDimAmount">0.8</item>
+
+    </style>
+    <style name="Dialog2" parent="android:style/Theme.Dialog">
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:backgroundDimEnabled">true</item>-->
+<!--        <item name="android:windowBackground">@color/tm</item>-->
+<!--        &lt;!&ndash; 表示当前对话框弹出后，他后面视图(一般指Activity的视图)的透明度 0 ：完全透明 1:完全不透明，黑色 &ndash;&gt;-->
+<!--        <item name="android:backgroundDimAmount">0.8</item>-->
+
+    </style>
+</resources>

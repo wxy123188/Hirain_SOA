@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="tm">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dialog_bg">#2A2846</color>
+    <color name="dialog_start_bg">#CC8FD8F6</color>
+    <color name="color_8fd8f6">#8FD8F6</color>
+    <color name="dialog_cancle_bg">#4B4868</color>
+    <color name="white_25">#40ffffff</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_80">#cc000000</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_80">#ccffffff</color>
+    <color name="white_10">#1affffff</color>
+    <color name="black_16">#29000000</color>
+    <color name="color_c9cbd1">#C9CBD1</color>
+    <color name="color_c9acbd1">#222831</color>
+    <color name="black_30">#4d000000</color>
+    <color name="color_a5a5a5">#a5a5a5</color>
+    <color name="color_cfcfcf">#cfcfcf</color>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_root"
+    android:layout_width="wrap_content"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:layout_height="96dp"
+    android:background="@drawable/shape_toast_circle_20">
+
+
+    <TextView
+        android:id="@+id/toast_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="我就是那个toast"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+
+</RelativeLayout>

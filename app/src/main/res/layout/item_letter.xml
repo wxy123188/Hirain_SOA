@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hirain.hirain.myview.SwipeMenuLayout
+    android:id="@+id/swipe_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shape_mode_item_5"
+    android:layout_height="80dp">
+  <RelativeLayout
+      android:id="@+id/item"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/model_name"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white_80"
+        android:layout_marginLeft="84dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        />
+
+    <ImageView
+        android:id="@+id/detail_bt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/model_meun"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        />
+  </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/model_edit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/dialog_start_bg"
+        >
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/model_edit"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/model_del"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#80FF7575"
+        >
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/model_del"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</com.hirain.hirain.myview.SwipeMenuLayout>

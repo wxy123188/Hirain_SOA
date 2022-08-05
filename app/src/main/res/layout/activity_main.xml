@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920dp"
+    android:layout_height="720dp"
+    android:background="@mipmap/home_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:id="@+id/system_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_c9cbd1"
+        android:textStyle="bold"
+        android:textSize="42sp"
+
+        />
+
+    <com.hirain.hirain.myview.NoScrollViewPager
+        android:id="@+id/viewpaget_main"
+        android:layout_width="1920dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/newview"
+        android:layout_width="184dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="1519dp"
+        android:layout_marginTop="56dp"
+        android:text="另存新模式"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/baoc"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="1721dp"
+        android:layout_marginTop="56dp"
+        android:text="保存"
+        android:visibility="gone"/>
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup_main"
+        android:layout_width="200dp"
+        android:layout_height="720dp">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_1"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:button="@null"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="68dp"
+            android:background="@drawable/main_home_selector"/>
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:button="@null"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="68dp"
+            android:background="@drawable/main_mode_selector"/>
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:button="@null"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="68dp"
+            android:background="@drawable/main_drive_selector"/>
+
+        <RadioButton
+            android:id="@+id/radio_4"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:button="@null"
+            android:layout_marginTop="56dp"
+            android:layout_marginLeft="68dp"
+            android:background="@drawable/main_user_selector"/>
+    </RadioGroup>
+
+</RelativeLayout>
